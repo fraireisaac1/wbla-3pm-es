@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Nosifer&family=Sorts+Mill+Goudy:ital@0;1&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Lusitana:wght@400;700&family=Nosifer&family=Sorts+Mill+Goudy:ital@0;1&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Lusitana:wght@400;700&family=Nosifer&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sorts+Mill+Goudy:ital@0;1&display=swap"
+    rel="stylesheet"
+  />
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ELEVATE</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -13,81 +25,301 @@
     <link rel="stylesheet" href="custom.css" />
   </head>
   <body>
-    <div class="container border text-center vh-100">
+    <div class="container text-center">
       <div class="row">
         <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
           <div class="container-fluid">
-            <span class="navbar-brand"><img src="logo.png" alt="elevate logo" height="75" width="75">ELEVATE</span>
+            <div class="logo-div">
+              <span class="navbar-brand"
+                ><img
+                  id="logoimg"
+                  src="./images/logo.png"
+                  alt="elevate logo"
+                  height="75px"
+                  width="75px"
+              /></span>
+              <p class="d-inline-block mt-4 fs-3">ELEVATE</p>
+            </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
             </button>
-            
-            <div class="collapse navbar-collapse border border-0 bg-dark" id="navbarSupportedContent">
-                <div class="navbar-nav bg-dark">
-                    <a href="index.html" class="nav-link" aria-current="page">Home</a>
-                    <a href="about_index.html" class="nav-link">About</a>
-                    <a href="#" class="nav-link">Contact</a>
+
+            <div
+              class="collapse navbar-collapse border-0 bg-dark justify-content-evenly"
+              id="navbarSupportedContent"
+            >
+              <div class="navbar-nav bg-dark">
+                <a href="index.html" class="nav-link mx-5" aria-current="page"
+                  >Home</a
+                >
+                <a href="about_index.html" class="nav-link mx-5">About</a>
+                <a href="contact.html" class="nav-link mx-5">Contact</a>
+                <a href="login.html" id="login-button" class="nav-link mx-5"
+                  ><span id="loginNav">Login/Register</span></a
+                >
+
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle bg-dark mt-2"
+                    id="user-dropdown"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    username should be here
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" id="cart-button" href="#"
+                        >Cart</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" id="changeAccount" href="#"
+                        >Change Accounts</a
+                      >
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </div>
           </div>
         </nav>
       </div>
 
-      <div class="row justify-content-between mt-3 h-10">
-        <div class="col-2 w-15">1</div>
-        <div class="col-2 w-15">2</div>
-        <div class="col-2 w-15">3</div>
-        <div class="col-2 w-15">4</div>
+      <h1 id="total-cart-deductable" class="bg-dark">
+        Total Cart Deductable: $0
+      </h1>
+
+      <div class="row justify-content-between mt-2">
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="./images/kettlebellAI.jfif"
+            alt="kettlebell"
+            height="100%"
+            width="100%"
+            title=" 10 Kettle Bells, this set of kettle bells weigh from 5lbs to 50lbs. ($75)"
+            
+          />
+        </div>
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="images/jumpropeAI.jfif"
+            alt="jumprope"
+            height="100%"
+            width="100%"
+            title="Jump Rope, highly resistant and durable so it won't break when you step on it. ($10)"
+            
+          />
+        </div>
+
+        <div class="w-100 d-lg-none"></div>
+
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="images/proteinjarAI.jfif"
+            alt="protein"
+            height="100%"
+            width="100%"
+            title="Protein powder in a jar, use this before workout to build muscle. (12$)"
+            
+          />
+        </div>
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="images/DumbellsAI.jfif"
+            alt="dumbells"
+            height="100%"
+            width="100%"
+            title="Adjustable Dumbells, can go from 5lbs to 50lbs. ($100) "
+            
+          />
+        </div>
       </div>
 
-      <div class="row justify-content-between mt-5 h-10">
-        <div class="col-2 w-15">1</div>
-        <div class="col-2 w-15">2</div>
-        <div class="col-2 w-15">3</div>
-        <div class="col-2 w-15">4</div>
+      <div class="row justify-content-between mt-3">
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="images/runninshoesAI.jfif"
+            alt="shoes"
+            height="100%"
+            width="100%"
+            title="Running shoes that are durable so you can run for miles. ($40)"
+            
+          />
+        </div>
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="images/punchingbagAI.jfif"
+            alt="punching bag"
+            height="100%"
+            width="100%"
+            title="Punching Bag, 500lbs, chain that can hold up even with intense force. ($90)"
+            "
+          />
+        </div>
+
+        <div class="w-100 d-lg-none"></div>
+
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="images/standingDesk.png"
+            alt="standing desk"
+            height="100%"
+            width="100%"
+            title="Standing Desk for all human heights. ($100)"
+            
+          />
+        </div>
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="images/hula_hoop.png"
+            alt="hula hoop"
+            height="100%"
+            width="100%"
+            title="Hula Hoop stable so it doesn't fall apart. ($10)"
+            
+          />
+        </div>
       </div>
 
-      <div class="row justify-content-between mt-5 h-10">
-        <div class="col-2 w-15">1</div>
-        <div class="col-2 w-15">2</div>
-        <div class="col-2 w-15">3</div>
-        <div class="col-2 w-15">4</div>
+      <div class="row justify-content-between mt-3">
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="images/bookAI.jfif"
+            alt="diet book"
+            height="100%"
+            width="100%"
+            title="Diet Book with the Knowledge of many health professionals. ($20)"
+            
+          />
+        </div>
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="images/doorway_pull-up_bar.png"
+            alt="pull up bar"
+            height="100%"
+            width="100%"
+            title="Pull Up Bar, extremely durable and will stay attached to the wall. ($45)"
+            
+          />
+        </div>
+
+        <div class="w-100 d-lg-none"></div>
+
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="images/hyreoflaskAI.jfif"
+            alt="flask"
+            height="100%"
+            width="100%"
+            title="Hydro Flask, hydrophobic and leakage free. ($15)"
+            
+          />
+        </div>
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="images/gymbagAI.jfif"
+            alt="gym bag"
+            height="100%"
+            width="100%"
+            title="Gym bag, carries all of the things you need at the gym. ($50)"
+            
+          />
+        </div>
       </div>
 
-      <div class="row justify-content-between mt-5 h-10">
-        <div class="col-2 w-15">1</div>
-        <div class="col-2 w-15">2</div>
-        <div class="col-2 w-15">3</div>
-        <div class="col-2 w-15">4</div>
+      <div class="row justify-content-between mt-3">
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="images/yogaballAI.jfif"
+            alt="yoga ball"
+            height="100%"
+            width="100%"
+            title="Yoga ball that can withstand 300lbs. ($10)"
+            
+          />
+        </div>
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="images/ResistenceBandsAI.jfif"
+            alt="resistance bands"
+            height="100%"
+            width="100%"
+            title="Resistance bands, made with highly resistant fabric to fit any scenario. ($15)"
+            
+          />
+        </div>
+
+        <div class="w-100 d-lg-none"></div>
+
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="images/barbell glovesAI.jfif"
+            alt="bar bell gloves"
+            height="100%"
+            width="100%"
+            title="Bar bell gloves, breathable and adjustable so it can fit all sizes. ($20)"
+            
+          />
+        </div>
+        <div class="col col-xl-2 w-15 p-0">
+          <img
+            src="images/exercisematAI.jfif"
+            alt="exercise mat"
+            height="100%"
+            width="100%"
+            title="Exercise mat, highly resistant so it lasts long making it fit all types of exercises. ($15) "
+            
+          />
+        </div>
       </div>
 
       <div class="row mt-3">
-        <div class="col">
-            <h4>
-                Summary:
-            </h4>
-            <p style="font-size: 1.1em">This company was curated by medical professionals, that know everything there is to know about health. They want you to live your best life, by creating a new healthy lifestyle for you.</p>
+        <div class="col border-0 home_summary p-3">
+          <h4><u>Summary</u></h4>
+          <p style="font-size: 1.1em">
+            This company was curated by medical professionals, that know
+            everything there is to know about health. Elevate wants you to live
+            your best life, by creating a new healthy lifestyle for you.
+          </p>
         </div>
 
-        <div class="col">
-          <h4>
-            What We Sell:
-          </h4>
-            <p style="font-size: 1.1em">
-              We sell health supplements that give people what they need to be in the best shape they can be. We also sell ergonomic equipment like standing desks and yoga balls.
-            </p>
+        <div class="w-100 d-lg-none"></div>
+
+        <div class="col border-0 home_summary p-3">
+          <h4><u>Our Products and Services</u></h4>
+          <p style="font-size: 1.1em">
+            We sell health supplements that give people what they need to be in
+            the best shape they can be. We also sell ergonomic equipment like
+            standing desks and yoga balls. Our services extend to the physical
+            health of people and the mental health of people. Our services can
+            be a dietary plan or therapy.
+          </p>
         </div>
-        
-        <div class="col">
-          <h4>
-            Our services and affordability:
-          </h4>
-          <p style = " font-size: 1.1em"> </p>
+
+        <div class="w-100 d-lg-none"></div>
+
+        <div class="col border-0 home_summary p-3">
+          <h4><u>Affordability and Quality</u></h4>
+          <p style="font-size: 1.1em">
+            At Elevate our services and products are made to be both affordable
+            and with fantastic quality. Why? We do this because at elevate we
+            make everything affordable so we can help a wider range of people.
+          </p>
         </div>
       </div>
       <div class="row mt-4">
-        <div class="col p-2">© ELEVATE 2024</div>
+        <div class="col p-2 border-0">© ELEVATE 2024</div>
       </div>
     </div>
 
@@ -96,6 +328,27 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="cart.js"></script>
+
+    <script>
+      const userDropdown = document.getElementById("user-dropdown");
+      const loginButton = document.getElementById("login-button");
+      const dropdown = document.querySelector(".dropdown");
+      const cartButton = document.getElementById("cart-button");
+      const changeAccount = document.getElementById("changeAccount");
+
+      if (localStorage.getItem("username")) {
+        userDropdown.textContent = localStorage.getItem("username");
+        loginButton.style.display = "none";
+        dropdown.style.display = "block";
+      }
+      cartButton.addEventListener("click", function () {
+        window.location.href = "cart.html";
+      });
+      changeAccount.addEventListener("click", function () {
+        window.location.href = "login.html";
+      });
+    </script>
   </body>
 </html>
 <!--random comment-->

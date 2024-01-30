@@ -1,10 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+@font-face {
+  font-family: horizon;
+  src: url(font/horizon.otf);
+}
+
+body {
+  background-image: url("./images/pikture.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  background-position: top;
+}
 
 [class*="col"] {
-  padding: 1rem;
-  background-color: #0d160d;
-  color: #e1a298;
-  border: 2px solid #fff;
+  /* padding: 1rem; */
+  background-color: #26272b;
+  color: white;
+  border: 1px solid #fff;
+  
 }
 
 .navbar {
@@ -13,44 +26,267 @@
   font-size: 2em;
 }
 
-.navbar-brand {
+.dropdown {
+  display: none;
+}
+
+/* .navbar-brand {
   color: white;
   font-size: 1.5rem;
   letter-spacing: 3px;
   font-family: "Poppins", sans-serif;
+} */
+
+.logo-div {
+  border-right: 4px solid gray;
 }
 
-.navbar-brand img {
-  margin-right: 10px;
-}
-
-.navbar-brand:hover {
+.logo-div:hover {
   color: #e1a298;
   cursor: default;
 }
 
+.logo-div p {
+  font-family: "horizon";
+  letter-spacing: 1px;
+  margin-right: 20px;
+}
+
 .nav-link {
   color: white;
-  /* margin-left: 200px; */
-}
-
-.h-10 {
-  height: 10%;
-}
-
-.h-20 {
-  height: 20%;
 }
 
 .w-15 {
   width: 15%;
-  background-color: #6e271b;
+  background-color: #622719;
+}
+#logoimg {
+  vertical-align: middle;
+  height: 100%;
 }
 
-
+.p-0{
+  box-shadow: 2px 3px 8px 5px rgba(0,0,0,0.9);
+}
 
 /* crimson 6e271b
 light red bb3e21
 dark pink e1a298
 black 0d160d
 light pink ecd2da */
+
+/*  */
+div#aboutpgstory {
+  width: 70%;
+
+  margin: auto;
+  background-color: rgb(43, 1, 1);
+  outline: 1px solid rgba(255, 255, 255, 0.999);
+  border-radius: 1rem;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+div#aboutpgstory p {
+  color: rgb(206, 202, 202);
+  font-size: 1.25rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 30px;
+}
+div.col-xl-2 {
+  /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3); */
+}
+div.col-xl-2:hover {
+  animation: size-alter 2s ease infinite;
+  cursor: pointer;
+}
+@keyframes size-alter {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(105%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
+/* <!-- contact webpage css start --> */
+div#container-top {
+  width: 100vw;
+  height: 30vh;
+  outline: 0px solid white;
+S}
+h1#top-text {
+  position: relative;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  top: 100px;
+}
+div#bottom-container {
+  width: 100vw;
+  height: 57.87vh;
+  
+}
+
+div.info-box {
+  outline: 2px solid white;
+  display: inline-block;
+  height: 30vh;
+  width: 25vw;
+  margin: 15px;
+  margin-left: 126px;
+  margin-top: 50px;
+}
+div#box1 {
+  width: 20vw;
+  background-image: url(/images/map-imageAI.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div#box2 {
+  background-color: wheat;
+  position: relative;
+  bottom: 105px;
+}
+
+h1.text-top-h{
+  text-align: center;
+}
+
+p.contact-text{
+  text-align: center;
+  color: black;
+  font-size: 22px;
+}
+
+input.pitch-input {
+  background-color: wheat;
+  border: 0px;
+  color: blue;
+}
+
+input::placeholder {
+  color: blue;
+}
+input#name-input {
+  width: 142px;
+}
+
+input#contact-input {
+  width: 77px;
+}
+input#work-position-input {
+  width: 240px;
+}
+
+div#box3 {
+  background-color: wheat;
+  position: relative;
+  bottom: 75px;
+}
+mark {
+  color: aqua;
+  background-color: wheat;
+}
+
+div#send-button{
+  background-image: linear-gradient(purple, blue);
+  width: 60px;
+  height: 26px;
+  border-radius: 5px;
+  color: pink;
+  padding: 0px;
+}
+/* 
+div#box1 {
+  width: 20vw;
+  outline: 1px solid white;
+}
+
+div#box2 {
+  width: 20vw;
+  outline: 1px solid white;
+}
+
+div#3 {
+  width: 20vw;
+  outline: 1px solid white;
+} */
+h1#total-cart-deductable {
+  color: white;
+  font-family: "horizon";
+  font-size: 1.5rem;
+  background-color: rgb(27, 44, 44);
+  outline: 2px solid white;
+  width: 60%;
+  margin: 20px auto;
+  text-align: left;
+  padding: 10px;
+}
+
+.home_summary {
+  font-family: "Open Sans";
+  font-size: 1.1rem;
+}
+
+@media (max-width: 991px) {
+  .logo-div {
+    margin: auto;
+    border: none;
+  }
+
+  h1#total-cart-deductable {
+    font-size: 0.8rem;
+  }
+
+  .logo-div p {
+    margin-right: 1px;
+  }
+}
+
+img.product-image {
+  width: 20vh;
+  height: 20vh;
+  margin: 10px 100px 10px 100px;
+  display:inline-block;
+}
+div.goober{
+  width:70%;
+  margin:20px auto;
+  margin:20px auto;
+  
+}
+p.price-text{
+  font-size:2rem;
+  display:inline-block;
+  color:white;
+  
+}
+div.goob {
+  text-align:center;
+  margin:20px auto;
+  width:50%;
+}
+div.check-out-div{
+  width:25%;
+  height:10vh;
+  margin:auto;
+}
+button.check-out-button{
+  width:100%;
+  height:10vh;
+  background-image:linear-gradient(135deg,maroon,brown);
+  color:white;
+  border: 2px solid black;
+  border-radius:1rem;
+  box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+  font-size:2rem;
+}
+button.check-out-button:hover{
+  animation:size-alter 2s ease infinite;
+}
