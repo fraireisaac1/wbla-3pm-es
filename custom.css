@@ -11,6 +11,9 @@ body {
   background-size: 100vw 100vh;
   background-position: top;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 
 [class*="col"] {
   /* padding: 1rem; */
@@ -120,6 +123,8 @@ S}
 h1#top-text {
   position: relative;
   color: white;
+  margin:auto;
+  padding:auto;
   font-family: "Poppins", sans-serif;
   text-align: center;
   top: 100px;
@@ -225,6 +230,7 @@ h1#total-cart-deductable {
   margin: 20px auto;
   text-align: left;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .home_summary {
@@ -291,7 +297,21 @@ button.check-out-button{
   border-radius:1rem;
   box-shadow:5px 5px 5px 5px rgba(0, 0, 0, 0.3);
   font-size:2rem;
+  /*margin:30px;*/
 }
 button.check-out-button:hover{
   animation:size-alter 2s ease infinite;
+}
+
+#storeH1 {
+  margin:auto;
+  padding:10px;
+  border-radius:5px;
+  width:80%;
+  color:white;
+  margin-top:10px;
+  letter-spacing:1px;
+  border-radius:10px;
+  font-family: horizon;
+  border: 2px solid white;
 }

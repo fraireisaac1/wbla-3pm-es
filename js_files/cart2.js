@@ -43,18 +43,18 @@ productData.forEach((product) => {
 
     //--------------------------------------------------------
     div.addEventListener("click", function(){
-        let yesOrNo = prompt("Would you like to delete this item? Type \"yes\" or \"no\".");
+        let yesOrNo = "Remove this item from your checkout list?";
 
-        switch(yesOrNo){
-            case "yes":
+        // World's best siwtch() case.
+        switch(confirm(yesOrNo)){
+            case true:
                 div.remove();
-                totalPrice = totalPrice - image.price;
-                totalPriceText.textContent = "Total Price $" + totalPrice;
+                totalPriceText.textContent = "Total Price $" + (totalPrice - image.price);
                 break;
-            case "no":
+            case false:
                 break;
             default:
-                break;
+                break;                
         }
     });
 });
