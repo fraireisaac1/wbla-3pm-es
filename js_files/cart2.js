@@ -2,10 +2,12 @@ const productData = JSON.parse(sessionStorage.getItem("globalProducts"));
 const totalPrice = sessionStorage.getItem("totalCartPrice");
 console.log(productData);
 
+const containerTwo = document.getElementById("container-two");
+
 const totalPriceTextContainer = document.createElement("div");
 totalPriceTextContainer.classList.add("col");
 totalPriceTextContainer.classList.add("goob");
-document.body.appendChild(totalPriceTextContainer);
+containerTwo.appendChild(totalPriceTextContainer);
 
 const totalPriceText = document.createElement("p");
 totalPriceText.classList.add("price-text");
@@ -29,11 +31,32 @@ productData.forEach((product) => {
 
     const priceText = document.createElement("p");
     priceText.classList.add("price-text");
-    priceText.textContent = "Item Price: $" + image.price;
+    if(image.price === null){
+        priceText.textContent = "Item Price: $0";
+    }else if(image.price !== null){
+        priceText.textContent = "Item Price: $" + image.price;
+    }
     div.appendChild(priceText);
     
     console.log(div);
-    document.body.appendChild(div);
+    containerTwo.appendChild(div);
+
+    //--------------------------------------------------------
+    div.addEventListener("click", function(){
+        let yesOrNo = prompt("Would you like to delete this item? Type \"yes\" or \"no\".");
+
+        switch(yesOrNo){
+            case "yes":
+                div.remove();
+                totalPrice = totalPrice - image.price;
+                totalPriceText.textContent = "Total Price $" + totalPrice;
+                break;
+            case "no":
+                break;
+            default:
+                break;
+        }
+    });
 });
 
 const checkOutDiv = document.createElement("div");
@@ -46,7 +69,7 @@ checkOutDiv.appendChild(checkOutButton);
 
 checkOutButton.addEventListener("click", function(){
     alert(`Your total is $${totalPrice}. Thank you for shopping with us!`);
-    
+    containerTwo.remove();
 });
 
 // This is a comment!

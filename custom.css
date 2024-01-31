@@ -58,7 +58,7 @@ body {
 
 .w-15 {
   width: 15%;
-  background-color: #622719;
+  background-color: rgb(45, 44, 44);
 }
 #logoimg {
   vertical-align: middle;
@@ -78,8 +78,6 @@ light pink ecd2da */
 /*  */
 div#aboutpgstory {
   width: 70%;
-
-  margin: auto;
   background-color: rgb(43, 1, 1);
   outline: 1px solid rgba(255, 255, 255, 0.999);
   border-radius: 1rem;
@@ -252,14 +250,21 @@ h1#total-cart-deductable {
 img.product-image {
   width: 20vh;
   height: 20vh;
-  margin: 10px 100px 10px 100px;
+  margin: 10px 100px 10px 50px;
   display:inline-block;
 }
 div.goober{
   width:70%;
   margin:20px auto;
-  margin:20px auto;
-  
+  margin:20px auto;  
+}
+div.goober:hover{
+  animation:shrink 2s ease infinite;
+}
+@keyframes shrink{
+  0%{transform:scale(100%);}
+  50%{transform:scale(95%)}
+  100%{transform:scale(100%);}
 }
 p.price-text{
   font-size:2rem;

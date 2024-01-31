@@ -83,15 +83,16 @@
   <p>
     Elevate started with a group of professionals in health, wellness, and technology. These professionals used their knowledge and shared vision to create Elevate.
   </p>
-  <h2>Elevates mission</h2>
+  <h2>Elevate's Mission</h2>
   <p>
     Just like our products, Elevate wants you to live the highest quality life you can possibly have. Elevate strives to make you live a both healthy, and comfortable life. If you think you are not having a very productive life, Elevate can help. Our products and services are designed to give you a source of happiness and balance in your life. If you a have a quality of life problem, Elevate is here to help you both physically and mentally.
   </p>
   <h2>What Elevate sells</h2>
   <p>Elevate's purpose is to help its customers sustain a healthier lifestyle, and it does this by selling a variety of products with the purpose of keeping Elevate's customers healthy and happy. Everything from weight training equipment to health supplements; even dietary suggestions. Elevate endevours to serve its customers to the fullest extent.</p>
   <p>The weight training equipment Elevate offers range from standard dumbbells and kettlebells, to doorway pull-up bars. We also offer supplements such as creatine, protein powder, and even cardio centric products such as excersise mats and yoga balls. For anyone looking to maker their lifestyle just that little bit more healthy, Elevate has something for you.</p>
-  <p>
+  
     <h2>Affordability and Quality</h2>
+    <p>
     Elevate would like you to know that our services and products will be both affordable and with exceptional quality. Why in <i>this</i> economy? Elevate's goal is for a wide range of people to live the best life they can. Making it affordable will change the lives of people this way everyone can afford more things.
   </p>
   <h2>Elevate's Audience</h2>
@@ -112,25 +113,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
-      const userDropdown = document.getElementById("user-dropdown");
-      const loginButton = document.getElementById("login-button");
-      const dropdown = document.querySelector(".dropdown");
-      const cartButton = document.getElementById("cart-button");
-      const changeAccount = document.getElementById("changeAccount");
-
-      if (localStorage.getItem("username")) {
-        userDropdown.textContent = localStorage.getItem("username");
-        loginButton.style.display = "none";
-        dropdown.style.display = "block";
-      }
-      cartButton.addEventListener("click", function () {
-        window.location.href = "cart.html";
-
-      });
-      changeAccount.addEventListener("click", function(){
-        window.location.href = "login.html";
-      })
-    </script>
+    <script src="js_files/dropdown.js"></script>
 </body>
 </html>

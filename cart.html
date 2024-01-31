@@ -83,7 +83,7 @@
         </nav>
       </div>
        
-      
+      <div id="container-two"></div>
 
       <!-- nav bar functionality -->
     <script
@@ -91,33 +91,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const userDropdown = document.getElementById("user-dropdown");
-      const loginButton = document.getElementById("login-button");
-      const dropdown = document.querySelector(".dropdown");
-      const cartButton = document.getElementById("cart-button");
-      const changeAccount = document.getElementById("changeAccount");
+    <script src="js_files/dropdown.js"></script>
+      <!-- end -->
 
-      if (localStorage.getItem("username")) {
-        userDropdown.textContent = localStorage.getItem("username");
-        loginButton.style.display = "none";
-        dropdown.style.display = "block";
-      }
-      cartButton.addEventListener("click", function () {
-        window.location.href = "cart.html";
-      });
-      changeAccount.addEventListener("click", function(){
-        window.location.href = "login.html";
-      });
-      // const globalProducts = JSON.parse(sessionStorage.getItem("globalProducts"));
-      // globalProducts.forEach((product) => {
-      //   console.log(product);
-      //   document.body.appendChild(product);
-      // });
-
-      // const globalProduct = JSON.parse(sessionStorage.getItem("globalProduct"));
-      // document.body.appendChild(globalProduct);
-    </script>
-    <script src="cart2.js"></script>
+    <script src="js_files/cart2.js"></script>
 </body>
 </html>

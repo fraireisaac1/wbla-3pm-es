@@ -281,6 +281,7 @@
             title="Exercise mat, highly resistant so it lasts long making it fit all types of exercises. ($15) "
             
           />
+          
         </div>
       </div>
 
@@ -319,7 +320,7 @@
         </div>
       </div>
       <div class="row mt-4">
-        <div class="col p-2 border-0">© ELEVATE 2024</div>
+        <div class="col p-2 border-0 bg-dark">© ELEVATE 2024</div>
       </div>
     </div>
 
@@ -328,27 +329,9 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="cart.js"></script>
+    <script src="js_files/cart.js"></script>
 
-    <script>
-      const userDropdown = document.getElementById("user-dropdown");
-      const loginButton = document.getElementById("login-button");
-      const dropdown = document.querySelector(".dropdown");
-      const cartButton = document.getElementById("cart-button");
-      const changeAccount = document.getElementById("changeAccount");
-
-      if (localStorage.getItem("username")) {
-        userDropdown.textContent = localStorage.getItem("username");
-        loginButton.style.display = "none";
-        dropdown.style.display = "block";
-      }
-      cartButton.addEventListener("click", function () {
-        window.location.href = "cart.html";
-      });
-      changeAccount.addEventListener("click", function () {
-        window.location.href = "login.html";
-      });
-    </script>
+    <script src="./js_files/dropdown.js"></script>
   </body>
 </html>
 <!--random comment-->
