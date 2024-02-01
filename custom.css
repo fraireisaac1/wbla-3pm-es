@@ -8,7 +8,7 @@ body {
   background-image: url("./images/pikture.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100vw 100vh;
+  background-size: 100% 100%;
   background-position: top;
 }
 
@@ -116,45 +116,48 @@ div.col-xl-2:hover {
 }
 /* <!-- contact webpage css start --> */
 div#container-top {
-  width: 100vw;
-  height: 30vh;
-  outline: 0px solid white;
+  /* width: 100vw;
+  height: 10vh; */
+  margin: 70px 0;
 }
 h1#top-text {
-  position: relative;
   color: white;
+  width: 60%;
+  padding: 5px;
+  border-radius: 10px;
   margin: auto;
-  padding: auto;
-  font-family: "Poppins", sans-serif;
+  font-family: horizon;
   text-align: center;
-  top: 100px;
+  border: 2px solid white;
 }
 div#bottom-container {
-  width: 100vw;
-  height: 57.87vh;
+  margin-top: 150px;
+  /* width: 100vw;
+  height: 57.87vh; */
 }
 
 div.info-box {
   outline: 2px solid white;
   display: inline-block;
-  height: 30vh;
+  height: 40vh;
   width: 25vw;
   margin: 15px;
-  margin-left: 126px;
-  margin-top: 50px;
-  border-radius: 20px;
-  }
+  /* margin-left: 126px; */
+  /* margin-top: 50px; */
+  border-radius: 15px;
+}
+
 div#box1 {
   width: 20vw;
-  background-image: url(/images/map-imageAI.jfif);
+  /* background-image: url(/images/map-imageAI.jfif);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 div#box2 {
   background-color: rgb(43, 1, 1);;
-  position: relative;
-  bottom: 90px;
+  /* position: relative;
+  bottom: 90px; */
 }
 
 h1.text-top-h {
@@ -199,8 +202,8 @@ input#work-position-input {
 
 div#box3 {
   background-color: rgb(43, 1, 1);;
-  position: relative;
-  bottom: 102px;
+  /* position: relative;
+  bottom: 102px; */
   text-align: center;
 }
 mark {
@@ -326,7 +329,6 @@ button.check-out-button:hover {
 #storeH1 {
   margin: auto;
   padding: 10px;
-  border-radius: 5px;
   width: 80%;
   color: white;
   margin-top: 10px;
