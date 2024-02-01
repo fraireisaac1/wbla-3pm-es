@@ -119,7 +119,7 @@ div#container-top {
   width: 100vw;
   height: 30vh;
   outline: 0px solid white;
-S}
+}
 h1#top-text {
   position: relative;
   color: white;
@@ -143,7 +143,8 @@ div.info-box {
   margin: 15px;
   margin-left: 126px;
   margin-top: 50px;
-}
+  border-radius: 20px;
+  }
 div#box1 {
   width: 20vw;
   background-image: url(/images/map-imageAI.jfif);
@@ -152,32 +153,42 @@ div#box1 {
 }
 
 div#box2 {
-  background-color: wheat;
+  background-color: rgb(43, 1, 1);;
   position: relative;
-  bottom: 105px;
+  bottom: 90px;
 }
 
 h1.text-top-h{
   text-align: center;
+  color: white;
 }
 
 p.contact-text{
   text-align: center;
-  color: black;
+  color: white;
   font-size: 22px;
 }
-
+p.pitch-text{
+  color: white;
+}
 input.pitch-input {
-  background-color: wheat;
+  background-color: rgb(43, 1, 1);;
   border: 0px;
-  color: blue;
+  color: white;
+
 }
 
 input::placeholder {
-  color: blue;
+  color: white;
+}
+p#pitch-paragraph{
+  color: white;
 }
 input#name-input {
   width: 142px;
+  background-color: rgb(43, 1, 1);
+  color: white;
+  border: none;
 }
 
 input#contact-input {
@@ -188,9 +199,10 @@ input#work-position-input {
 }
 
 div#box3 {
-  background-color: wheat;
+  background-color: rgb(43, 1, 1);;
   position: relative;
-  bottom: 75px;
+  bottom: 102px;
+  text-align: center;
 }
 mark {
   color: aqua;
