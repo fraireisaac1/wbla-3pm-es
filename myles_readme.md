@@ -107,7 +107,7 @@ if (localStorage.getItem("username")) {
 
 This allows the dropdown text on the navbar to be set to the username of the account that the user has logged in with.
 
-We used localstorage because it is the only way we know how to make a login page functional.
+Most of the login functionality was built using localstorage.
 
 
 
