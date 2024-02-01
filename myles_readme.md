@@ -1,5 +1,9 @@
 # Documentation for Myles' Contribution
 
+## I worked mostly on the Home page but I contributed a little on other things.
+
+
+
 ## The Navbar
 
 ```html
