@@ -67,8 +67,8 @@ body::-webkit-scrollbar {
   height: 100%;
 }
 
-.p-0 {
-  box-shadow: 2px 3px 8px 5px rgba(0, 0, 0, 0.9);
+.p-0{
+  box-shadow: 2px 3px 8px 5px rgba(30,30,30,0.9);
 }
 
 /* crimson 6e271b
