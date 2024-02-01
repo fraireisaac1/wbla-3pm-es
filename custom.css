@@ -91,10 +91,12 @@ div#aboutpgstory {
   margin-bottom: 30px;
 }
 div#aboutpgstory p {
-  color: rgb(206, 202, 202);
+  color: rgb(255, 255, 255);
   font-size: 1.25rem;
-  font-family: "Poppins", sans-serif;
   line-height: 30px;
+}
+#h2story{
+  font-family: "Poppins", sans-serif;
 }
 div.col-xl-2 {
   /* box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3); */
