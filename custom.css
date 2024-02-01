@@ -11,6 +11,7 @@ body {
   background-size: 100vw 100vh;
   background-position: top;
 }
+
 body::-webkit-scrollbar {
   display: none;
 }
@@ -52,7 +53,7 @@ body::-webkit-scrollbar {
 .logo-div p {
   font-family: "horizon";
   letter-spacing: 1px;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 .nav-link {
@@ -69,7 +70,7 @@ body::-webkit-scrollbar {
 }
 
 .p-0{
-  box-shadow: 2px 3px 8px 5px rgba(0,0,0,0.9);
+  box-shadow: 2px 3px 8px 5px rgba(40,40,40,0.9);
 }
 
 /* crimson 6e271b
@@ -251,6 +252,10 @@ h1#total-cart-deductable {
   .logo-div p {
     margin-right: 1px;
   }
+
+  .p-0{
+  box-shadow: none;
+}
 }
 
 img.product-image {
