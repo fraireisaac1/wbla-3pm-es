@@ -149,6 +149,7 @@ div.info-box {
 
 div#box1 {
   width: 20vw;
+  padding: 0;
   /* background-image: url(/images/map-imageAI.jfif);
   background-size: cover;
   background-repeat: no-repeat; */
