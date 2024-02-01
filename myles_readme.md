@@ -89,6 +89,8 @@ If you were to go on the webpage on a device with a smaller resolution the links
 
 ## Dropdown Functionality
 
+Bootstrap has built in functionality for the dropdown, so I did not have to do much for it.
+
 ```js
 const userDropdown = document.getElementById("user-dropdown");
 const loginButton = document.getElementById("login-button");
@@ -102,8 +104,6 @@ if (localStorage.getItem("username")) {
   dropdown.style.display = "block";
 }
 ```
-
-Bootstrap has built in functionality for the dropdown, so I did not have to do much for it.
 
 This allows the dropdown text on the navbar to be set to the username of the account that the user has logged in with.
 
