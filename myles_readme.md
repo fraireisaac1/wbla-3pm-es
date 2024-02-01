@@ -99,7 +99,9 @@ if (localStorage.getItem("username")) {
 }
 ```
 
-This allows the dropdown text to be set to the username of the account that the user has logged in with.
+Bootstrap has built in functionality for the dropdown, so I did not have to do much for it.
+
+This allows the dropdown text on the navbar to be set to the username of the account that the user has logged in with.
 
 We used localstorage because it is the only way we know how to make a login page functional.
 
@@ -285,3 +287,50 @@ There are a total of sixteen individual cells each with an image of a product in
 On the layout there's four rows and each have four cells inside spaced evenly apart. They are positioned across the page horizontally.
 
 On a smaller resolution they will rearrange into four square blocks with four cells fitted inside.
+
+
+
+
+
+## Project Contribution Summary
+
+We all worked a little bit on everything, but our main individual contributions are as follows:
+
+### Myles
+
+- HTML Structure and CSS styling on the Home page.
+- Overall layout for the site.
+
+
+
+### Trevor
+
+- HTML Structure and CSS styling on the Login page.
+- Functionality for the Login page.
+
+
+
+### Brock
+
+- All of the writing for the summary of the brand on the Home page.
+- All of the writing for the About page of the site.
+
+
+
+### Isaac
+
+- Functionality of adding items to Cart.
+- Functionality of items in cart appearing on the Cart page.
+
+
+
+### Santiago
+
+- Worked with Daniel to provide images of the products using an AI generator.
+- Made most of the content on the Contact page.
+
+
+
+### Daniel
+
+- Worked with Santiago to provide images of the products using an AI generator.
