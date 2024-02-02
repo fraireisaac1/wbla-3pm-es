@@ -184,6 +184,7 @@ input.pitch-input {
 
 input::placeholder {
   color: white;
+  outline: 1px dotted white;
 }
 p#pitch-paragraph {
   color: white;
@@ -204,23 +205,15 @@ input#work-position-input {
 
 div#box3 {
   background-color: rgb(43, 1, 1);;
-  /* position: relative;
-  bottom: 102px; */
-  text-align: center;
+  position: relative;
+  /* bottom: 102px;
+  text-align: center; */
 }
 mark {
   color: aqua;
   background-color: wheat;
 }
 
-div#send-button {
-  background-image: linear-gradient(purple, blue);
-  width: 60px;
-  height: 26px;
-  border-radius: 5px;
-  color: pink;
-  padding: 0px;
-}
 /* 
 div#box1 {
   width: 20vw;
