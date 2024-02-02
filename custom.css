@@ -178,9 +178,10 @@ p.pitch-text {
 }
 input.pitch-input {
   background-color: rgb(43, 1, 1);
-  border: 0px;
+  border: solid 1px;
   color: white;
   text-decoration: underline;
+  
 }
 
 input::placeholder {
@@ -194,7 +195,7 @@ input#name-input {
   width: 142px;
   background-color: rgb(43, 1, 1);
   color: white;
-  border: none;
+
   text-decoration: underline;
 }
 
@@ -209,6 +210,7 @@ color: white;
 outline: dashed 1px white;
 
 }
+
 div#box3 {
   background-color: rgb(43, 1, 1);;
   position: relative;
