@@ -180,11 +180,12 @@ input.pitch-input {
   background-color: rgb(43, 1, 1);
   border: 0px;
   color: white;
+  text-decoration: underline;
 }
 
 input::placeholder {
   color: white;
-  outline: 1px dotted white;
+  
 }
 p#pitch-paragraph {
   color: white;
@@ -194,15 +195,20 @@ input#name-input {
   background-color: rgb(43, 1, 1);
   color: white;
   border: none;
+  text-decoration: underline;
 }
 
 input#contact-input {
-  width: 77px;
+  width: 117px;
 }
 input#work-position-input {
-  width: 240px;
+  width: 290px;
 }
+a#email-us-link{
+color: white;
+outline: dashed 1px white;
 
+}
 div#box3 {
   background-color: rgb(43, 1, 1);;
   position: relative;
