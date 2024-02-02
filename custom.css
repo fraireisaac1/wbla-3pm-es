@@ -209,14 +209,7 @@ mark {
   background-color: wheat;
 }
 
-div#send-button{
-  background-image: linear-gradient(purple, blue);
-  width: 60px;
-  height: 26px;
-  border-radius: 5px;
-  color: pink;
-  padding: 0px;
-}
+
 /* 
 div#box1 {
   width: 20vw;
